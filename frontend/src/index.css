@@ -1,0 +1,25 @@
+@import "@flaticon/flaticon-uicons/css/all/all";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    * {
+        @apply m-0 p-0 box-border duration-100;
+    }
+
+    .input-icon{
+        @apply absolute left-[50px] top-1/2 -translate-y-1/2;
+    }
+    .input-box {
+        @apply w-[100%] rounded-md p-4 bg-none pl-12 border border-black/65 placeholder:capitalize focus:border-button1 placeholder:text-black;
+    }
+
+    .input{
+        @apply w-[40%] rounded-md p-4 bg-none pl-12 border border-grey  focus:border-button1 placeholder:text-black;
+    }
+    .active{
+        @apply border-4 border-button1 ;
+    }
+}
